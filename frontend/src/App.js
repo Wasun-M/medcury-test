@@ -51,7 +51,7 @@ export default function App() {
     console.log("filterEvents: ", filterEvents)
     setEvents(filterEvents.map(x => {
       let _obj = {
-        title: x.status != "cancel" ? `${x.doctor} นัดตรวจ ${x.patient.name}` : `${x.patient.name} ยกเลิกนัดตรวจกับหมอ ${x.doctor}`,
+        title: x.status != "cancel" ? `${x.doctor} นัดตรวจ ${x.patient.name}` : `${x.patient.name} ยกเลิกนัดตรวจ`,
         start: getDate(x.startDisplayDate),
         end: getDate(x.endDisplayDate),
         backgroundColor: x.status != "cancel" ? "yellow" : "red",
