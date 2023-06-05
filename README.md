@@ -17,12 +17,12 @@ How to run back-end
   3. npm run dev
 
 
-Api list
-  1. 
-    endpoint -> /doctors/slots 
+Api list 
+1. 
+    endpoint -> /doctors/slots
     method -> GET
     params -> startDate, endDate :formate "YYYY/MM/DD"
-  2. 
+2. 
     endpoint -> /reserve
     method -> POST
     body -> {
@@ -33,7 +33,7 @@ Api list
                  "tel": string,
                  "pin": string
                }     
-  3. 
+  3.
     endpoint -> /reserve/cancel
     method -> POST
     body -> {
@@ -45,7 +45,7 @@ Api list
   4. 
     endpoint -> /doctors/slots/:id
     method -> GET
-    params -> id: string     
+    params -> id: string
     example -> /doctors/slots/001
     
   **** ข้อมูลที่จะแสดงหน้า front-end จะมาจากการยิง API เส้น /reserve เพราะฉะนั้นจะต้อง Insert Data ก่อนจึงจะเห็นตารางการจองใน ปฏิทิน ****
